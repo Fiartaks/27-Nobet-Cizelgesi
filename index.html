@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nöbet Çizelgesi</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <button onclick="generateSchedule()">Yeni Nöbet Çizelgesi Oluştur</button>
+    <div class="weekday" id="weekday-buttons"></div>
+    <table id="nobet-cizelgesi">
+        <thead>
+            <tr>
+                <th>Saat Dilimi</th>
+                <th>Nöbetçi 1</th>
+                <th>Nöbetçi 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 24 saatlik bir döngüde 2 şer saatlik 12 nöbet -->
+            <tr>
+                <td>00:00 - 02:00</td>
+                <td>Fırat Akkuş</td>
+                <td>Mustafa Taş</td>
+            </tr>
+            <tr>
+                <td>02:00 - 04:00</td>
+                <td>M.Erhan Oduncu</td>
+                <td>L.Umut Kısabacak</td>
+            </tr>
+            <tr>
+                <td>04:00 - 06:00</td>
+                <td>Vahdettin Kaçmaz</td>
+                <td>Ferda Ümür</td>
+            </tr>
+            <tr>
+                <td>06:00 - 08:00</td>
+                <td>Sezer Özer</td>
+                <td>Hüzeyfe Gündüz</td>
+            </tr>
+            <tr>
+                <td>08:00 - 10:00</td>
+                <td>Rıza Koç</td>
+                <td>Süleyman Aksoy</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>Fikret Çetin</td>
+                <td>Serhat Aydın</td>
+            </tr>
+            <tr>
+                <td>12:00 - 14:00</td>
+                <td>Bülent Kılıç</td>
+                <td>Oğuzhan Kar
+            <tr>
+                <td>12:00 - 14:00</td>
+                <td>Bülent Kılıç</td>
+                <td>Oğuzhan Karaca</td>
+            </tr>
+            <tr>
+                <td>14:00 - 16:00</td>
+                <td>Tamer Polat</td>
+                <td>Orhan Eren</td>
+            </tr>
+            <tr>
+                <td>16:00 - 18:00</td>
+                <td>Cenk Yıldırım</td>
+                <td>Yiğit Güneş</td>
+            </tr>
+            <tr>
+                <td>18:00 - 20:00</td>
+                <td>Cem Kaplan</td>
+                <td>Levent Taş</td>
+            </tr>
+            <tr>
+                <td>20:00 - 22:00</td>
+                <td>Cihan Bal</td>
+                <td>Edip Uçar</td>
+            </tr>
+            <tr>
+                <td>22:00 - 00:00</td>
+                <td>Taner Akpınar</td>
+                <td>Saffet Sönmez</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>
