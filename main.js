@@ -121,6 +121,10 @@ function generateSchedule() {
     person1Cell.textContent = person1;
     person2Cell.textContent = person2;
 
+    //! Tıklanabilir hale getir
+    person1Cell.onclick = () => openModal(person1, timeSlots[i]);
+    person2Cell.onclick = () => openModal(person2, timeSlots[i]);
+
     //* Eğer Fırat Akkuş nöbetçiyse, mavi arka planı
     if (person1 === "Fırat Akkuş") {
       person1Cell.classList.add("highlight");
@@ -157,6 +161,32 @@ function generateSchedule() {
     currentDayIndex++;
   }
 }
+
+//! Modal açma fonksiyonu
+function openModal(personName, timeSlot) {
+  const modal = document.getElementById("modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalTime = document.getElementById("modal-time");
+
+  modalTitle.textContent = personName;
+  modalTime.textContent = `Nöbet Saati: ${timeSlot}`; // Saat dilimini burada gösteriyoruz
+
+  modal.style.display = "block"; // Modalı göster
+}
+
+//* Modalı kapatma fonksiyonu
+document.getElementById("close").onclick = function () {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none"; // Modalı gizle
+};
+
+//* Modal dışına tıklanırsa kapat
+window.onclick = function (event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    modal.style.display = "none"; // Modalı gizle
+  }
+};
 
 //! Tıklanan günü göstermek için bir fonksiyon
 function displaySchedule(day) {
