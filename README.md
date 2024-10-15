@@ -1,5 +1,5 @@
 # 📅 Nöbet Çizelgesi 📊
-Bu proje, nöbet tutacak kişilerin belirli zaman dilimlerinde organize edilmesine yardımcı olan bir uygulamadır. Kullanıcılar, yeni nöbet çizelgeleri oluşturabilir ve mevcut çizelgeleri görüntüleyebilir. 📅 
+Bu proje, nöbet tutacak 56  kişinin belirli zaman dilimlerinde organize edilmesine yardımcı olan bir uygulamadır. Kullanıcılar, yeni nöbet çizelgeleri oluşturabilir ve mevcut çizelgeleri görüntüleyebilir. 📅 Nöbet sürelerinin eşit dağıtılması sağlanmış ve rastgele pay edilmesi engellenmiştir.  
 
 ## 📸 Sunum 📸
 ![](https://github.com/Fiartaks/27-Nobet-Cizelgesi/blob/main/gif%20and%20png/nobet.gif)
